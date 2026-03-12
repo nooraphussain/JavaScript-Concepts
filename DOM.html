@@ -1,0 +1,37 @@
+<div id="container">
+    <p class="text">Hello</p>
+    <p class="text">World</p>
+    <p id="p1">Remove me!</p>
+    <button id="btn">Click me!</button>
+  </div>
+  
+  <script>
+    const firstPara = document.querySelector(".text");   // Selects first .text
+    const allParas = document.querySelectorAll(".text"); // Selects all .text
+    
+  
+    console.log(firstPara.textContent);  // Hello
+    allParas.forEach(p => console.log(p.textContent)); // Hello, World
+
+    //appendChild
+    const container = document.querySelector("#container")
+    const newPara = document.createElement("p");
+    newPara.textContent = "this is paragraph content"
+    container.appendChild(newPara)
+
+    //removeChild
+    const dltPara = document.querySelector("#p1");
+    
+    container.removeChild(dltPara);
+
+    dltPara.remove()  // modern method
+
+
+    //addeventListener
+    const btn = document.querySelector("#btn");
+    btn.addEventListener("click", ()=> {
+        alert("Button clicked!")
+    })
+
+  </script>
+  

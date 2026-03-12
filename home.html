@@ -1,0 +1,12 @@
+<input type="checkbox" id="myCheckbox">
+<button id="toggleBtn">Toggle Checkbox</button>
+
+<script>
+    const checkbox = document.getElementById('myCheckbox');
+    const button = document.getElementById('toggleBtn');
+
+    button.addEventListener("click" , () => {
+        checkbox.checked = !checkbox.checked;
+    });
+
+</script>
