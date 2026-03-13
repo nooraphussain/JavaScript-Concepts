@@ -59,4 +59,15 @@ console.log(obj.__proto__ === Object.prototype);
 console.log(obj.__proto__.__proto__);  
 // null (end of the prototype chain)
 
-  
+
+
+//- does null have prototype?
+
+// null represents:
+// The intentional absence of any object value.
+// It is a primitive type, not an object.
+console.log(typeof null); // "object"
+//Weirdly, typeof null returns "object"—this is a historical bug in JavaScript—but null itself is not an object.
+
+console.log(null.__proto__); // TypeError
+//null is not an object, so it doesn’t have a __proto__.
