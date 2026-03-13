@@ -20,11 +20,11 @@ counter();
 
 // Why Are Closures Useful?
 
-// Data encapsulation (private variables)
+// Data encapsulation (private variables) - bankAcc
 // Callbacks and event handlers
 // Memoization and caching
 // Maintaining state in async code
-// Function Factories
+// Function Factories - multiplier
 
 function createBankAccount (){
     let balance = 10000;
@@ -62,3 +62,11 @@ function multiplier(x){
 const double = multiplier(2);
 console.log(double(3))
 console.log(double(4))
+
+
+//Drawbacks of Closures
+
+//Memory Consumption
+//Memory Leaks with DOM Elements
+//Debugging Difficulty
+//Hidden dependencies between functions
