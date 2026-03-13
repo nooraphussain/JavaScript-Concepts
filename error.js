@@ -85,7 +85,7 @@ try {
 // Use the throw keyword.
 
 
-// Advantages of Error Handling
+// 9. Advantages of Error Handling
 
 // ✔ Prevents application crashes
 // ✔ Provides user-friendly messages
@@ -93,7 +93,7 @@ try {
 // ✔ Allows recovery from failures
 // ✔ Makes applications more robust
 
-//  Disadvantages / Limitations
+// 10. Disadvantages / Limitations
 
 // ❌ Overusing try...catch can make code messy
 // ❌ It cannot catch syntax errors at compile time
