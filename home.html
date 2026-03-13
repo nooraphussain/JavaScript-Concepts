@@ -12,3 +12,13 @@
     });
 
 </script>
+
+<!-- - prevent right click of a button -->
+<button id="rightClick">Right Click me</button>
+<script>
+    const btn = document.getElementById('rightClick');
+    btn.addEventListener('contextmenu', (e) => {
+        e.preventDefault();
+        alert('Right click disabled on this button!')
+    })
+</script>
