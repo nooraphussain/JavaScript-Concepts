@@ -58,3 +58,7 @@ let result3 = nums
 
 console.log(result3); 
 
+//10. Non repeating elements only;
+let arr4 = [1,1,2,3,4,4,5,5,6];
+let uniques = arr4.filter((num, index, arr) => arr.indexOf(num) === arr.lastIndexOf(num))
+console.log(uniques) //[ 2, 3, 6 ]
