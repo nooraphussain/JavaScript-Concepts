@@ -82,3 +82,22 @@ function countdown(n) {
 function add(a, b) {
     return a + b;
 }
+
+
+//14. Factory function
+//A function that creates and returns a new object each time it is called.
+function createUser(name, age) {
+    return {
+      name: name,
+      age: age,
+      greet() {
+        console.log("Hello, my name is " + name);
+      }
+    };
+  }
+  
+  const user1 = createUser("Noorr", 22);
+  const user2 = createUser("Alex", 25);
+  
+  user1.greet();
+  user2.greet();
