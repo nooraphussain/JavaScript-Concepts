@@ -18,3 +18,17 @@ greetUser(sayHello)
 // You want to run custom behavior after something else happens.
 // You're dealing with asynchronous operations (like API calls, timeouts, file reads).
 // You want to make your code more reusable and flexible.
+
+
+// How to add two numbers using a callback function?
+
+function addNumbers(a, b, callback) {
+    let sum = a + b;
+    callback(sum);
+}
+
+function displayResult(result) {
+    console.log("Sum is:", result);
+}
+
+addNumbers(5, 3, displayResult);
