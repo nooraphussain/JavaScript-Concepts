@@ -17,3 +17,17 @@ let sumOfPos =  arr2.reduce((acc, curr) => {
 },0)
 console.log(sumOfPos)
 
+
+//How to find the second largest number in an array?
+let arr3 = [10, 5, 8, 20, 15];
+let res = arr3.reduce((acc, curr) => {
+    if(curr > acc.max){
+        acc.secMax = acc.max;
+        acc.max = curr;
+    } else if(curr > acc.secMax){
+        acc.secMax = curr;
+    }
+    return acc;
+},{max: -Infinity, secMax : -Infinity})
+
+console.log(res.secMax)
