@@ -83,6 +83,21 @@ try {
 
 // Sometimes developers want to create their own errors.
 // Use the throw keyword.
+function withdraw(balance, amount) {
+
+  if(amount > balance){
+    throw new Error("Insufficient balance");
+  }
+
+  return balance - amount;
+}
+
+try{
+  withdraw(100,200);
+}
+catch(err){
+  console.log(err.message);
+}
 
 
 // 9. Advantages of Error Handling
