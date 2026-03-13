@@ -20,7 +20,7 @@ askName()
 
 //4.Anonymous function
 setTimeout(function(){
-    console.log("I'm printing after 1 seconds")
+    console.log("I'm printing after 1 seconds") 
  }, 1000)
 
 
