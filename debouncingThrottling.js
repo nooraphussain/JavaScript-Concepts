@@ -20,7 +20,7 @@ function debounce(func, delay) {
     search(e.target.value);
   });
 
-
+  
 //Throttling
 //Throttling ensures that a function is executed at most once every specified interval,
 // no matter how many times the event occurs.
