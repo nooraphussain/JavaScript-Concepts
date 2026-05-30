@@ -24,7 +24,7 @@ const user = {
     }
   };
   
-  user.greet();
+  user.greet(); //Noorr
 
 // 3.2. Can be used as Constructor
 // Regular functions can create objects with new.
@@ -34,7 +34,7 @@ function Person(name) {
   
   const p1 = new Person("Noorr");
   
-  console.log(p1.name);
+  console.log(p1.name); //Noorr
 
 // 3.3. Has arguments object
 // Regular functions provide an arguments object.
@@ -65,7 +65,7 @@ const greet = (name) => {
 const square = x => x * x;
 
 //Multiple Parameters
-const add = (a, b) => a + b;
+const add3 = (a, b) => a + b;
 
 //No parameters
 const greet2 = () => "Hello";
@@ -82,14 +82,14 @@ const user2 = {
     }
   };
   
-  user.greet(); //undefined
+  user2.greet(); //undefined
 //Because `this` refers to global scope, not the object.
 
 
 // 3.2 Cannot Be Used as Constructor
 // Arrow functions cannot be used with new.
 
-const Person = (name) => {
+const Person2 = (name) => {
   this.name = name;
 };
 
@@ -101,24 +101,24 @@ const p = new Person("Noorr");
 // 3.3. No arguments Object
 // Arrow functions do not have arguments.
 
-const sum = () => {
+const sum2 = () => {
   console.log(arguments);
 };
 
 // Error.
 // Instead use rest parameters.
 
-const sum = (...nums) => {
+const sum3 = (...nums) => {
   console.log(nums);
 };
 
-sum(1,2,3);
+sum3(1,2,3);
 
 
 // 4. Not Hoisted
 // Arrow functions behave like variables.
 
-sayHi();
+//sayHi();
 
 const sayHi = () => {
   console.log("Hi");

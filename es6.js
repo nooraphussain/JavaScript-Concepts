@@ -32,6 +32,10 @@ console.log(x); // ❌ ReferenceError
 
 // Pitfalls
 // const does NOT make objects immutable
+const obj = { name: "Noor" };
+obj = {name: 'Arun'} //❌ TypeError: Assignment to constant variable.
+obj.name = 'Arun' // ✅ mutable
+console.log(obj) 
 
 
 // 2. Arrow Functions (=>)

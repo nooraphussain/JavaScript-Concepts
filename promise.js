@@ -64,6 +64,7 @@ Promise.race([p6, p7]).then(res => console.log(res))
 //Promise.any(iterable)
 //Resolves as soon as the first promise fulfills.
 //Ignores rejections unless all fail → then it rejects with AggregateError.
+//If everything is reject gives aggregate error
 
 const p8 = Promise.reject("❌ fail");
 const p9 = Promise.resolve("✅ success");

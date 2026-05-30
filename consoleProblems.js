@@ -1,5 +1,5 @@
-console.log({} === {});
-console.log({} == {});
+// console.log({} === {}); //false
+console.log({} == {});  //false
 
 //Objects are compared by reference, not by value.
 

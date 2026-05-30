@@ -8,3 +8,13 @@ const timer = setInterval(() => {
         console.log('Timers Up!');
     }
 },500)
+
+
+//generator function to print infinite odd numbers with a 1-second interval,
+let i = 1;
+const timer2 = setInterval(() => {
+    console.log(i);
+    i += 2;
+
+    if(i>50){clearInterval(timer2)}
+},1000);

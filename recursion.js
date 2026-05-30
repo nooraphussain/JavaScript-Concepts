@@ -1,4 +1,5 @@
-// Recursion is when a function calls itself to solve a smaller version of the same problem, until it reaches a base case (the point where it stops).
+// Recursion is when a function calls itself to solve a smaller version of the same problem, until it 
+//reaches a base case (the point where it stops).
 
 // 📌 Structure of a Recursive Function
 // Every recursive function has 2 parts:

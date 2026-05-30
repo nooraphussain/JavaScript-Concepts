@@ -86,4 +86,4 @@ const handler2 = {
 
 const proxyUser = new Proxy(user, handler2);
 proxyUser.name; 
-proxyUser.age = 21;
+proxyUser.age = 21; 
